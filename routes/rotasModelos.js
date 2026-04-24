@@ -64,7 +64,7 @@ const rotasModelos = new Router();
  * responses:
  * 200:
  * description: Modelo atualizado com sucesso
- * * /modelo/{codigo}:
+ *  /modelo/{codigo}:
  * get:
  * summary: Retorna um modelo específico pelo código
  * tags: [Modelos]
