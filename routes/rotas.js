@@ -35,7 +35,6 @@ const rotas = new Router();
  */
 rotas.route("/login").post(login);
 
-// Registrando os outros arquivos de rotas
 rotas.use(rotasMarcas);
 rotas.use(rotasModelos);
 
