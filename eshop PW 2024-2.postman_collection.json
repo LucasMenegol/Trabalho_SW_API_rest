@@ -1,0 +1,231 @@
+{
+	"info": {
+	  "_postman_id": "c7627d76-8075-4e40-b7dc-6f0cbcaa855e",
+	  "name": "eshop PW 2024-2",
+	  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+	  "_exporter_id": "10292792"
+	},
+	"item": [
+	  {
+		"name": "get marcas",
+		"request": {
+		  "method": "GET",
+		  "header": [],
+		  "url": {
+			"raw": "http://localhost:3002/marca",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "marca"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "get marca por codigo",
+		"request": {
+		  "method": "GET",
+		  "header": [],
+		  "url": {
+			"raw": "http://localhost:3002/marca/1",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "marca",
+			  "1"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "delete marca",
+		"request": {
+		  "method": "DELETE",
+		  "header": [],
+		  "url": {
+			"raw": "http://localhost:3002/marca/1",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "marca",
+			  "1"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "add marca",
+		"request": {
+		  "method": "POST",
+		  "header": [],
+		  "body": {
+			"mode": "raw",
+			"raw": "{ \"nome\" : \"Ford\" }",
+			"options": {
+			  "raw": {
+				"language": "json"
+			  }
+			}
+		  },
+		  "url": {
+			"raw": "http://localhost:3002/marca",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "marca"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "update marca",
+		"request": {
+		  "method": "PUT",
+		  "header": [],
+		  "body": {
+			"mode": "raw",
+			"raw": "{\n  \"codigo\": 1,\n  \"nome\": \"Chevrolet\"\n}",
+			"options": {
+			  "raw": {
+				"language": "json"
+			  }
+			}
+		  },
+		  "url": {
+			"raw": "http://localhost:3002/marca",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "marca"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "get modelos",
+		"request": {
+		  "method": "GET",
+		  "header": [],
+		  "url": {
+			"raw": "http://localhost:3002/modelo",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "modelo"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "get modelo por codigo",
+		"request": {
+		  "method": "GET",
+		  "header": [],
+		  "url": {
+			"raw": "http://localhost:3002/modelo/1",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "modelo",
+			  "1"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "delete modelo",
+		"request": {
+		  "method": "DELETE",
+		  "header": [],
+		  "url": {
+			"raw": "http://localhost:3002/modelo/1",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "modelo",
+			  "1"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "add modelo",
+		"request": {
+		  "method": "POST",
+		  "header": [],
+		  "body": {
+			"mode": "raw",
+			"raw": "{\n  \"nome\" : \"Fusion\",\n  \"marca_id\" : 1\n}",
+			"options": {
+			  "raw": {
+				"language": "json"
+			  }
+			}
+		  },
+		  "url": {
+			"raw": "http://localhost:3002/modelo",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "modelo"
+			]
+		  }
+		},
+		"response": []
+	  },
+	  {
+		"name": "update modelo",
+		"request": {
+		  "method": "PUT",
+		  "header": [],
+		  "body": {
+			"mode": "raw",
+			"raw": "{\n  \"codigo\": 1,\n  \"nome\": \"Fiesta\",\n  \"marca_id\": 1\n}",
+			"options": {
+			  "raw": {
+				"language": "json"
+			  }
+			}
+		  },
+		  "url": {
+			"raw": "http://localhost:3002/modelo",
+			"host": [
+			  "localhost"
+			],
+			"port": "3002",
+			"path": [
+			  "modelo"
+			]
+		  }
+		},
+		"response": []
+	  }
+	]
+  }
+  
