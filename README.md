@@ -26,3 +26,32 @@ Swagger (Documentação - opcional)
 Node.js instalado (v18+)
 
 PostgreSQL instalado e rodando.
+
+2. Configuração do Banco de Dados
+No seu terminal PostgreSQL ou pgAdmin, execute os seguintes comandos para criar a estrutura:
+
+CREATE DATABASE eshoppw;
+
+CREATE TABLE marcas (
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE modelos (
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    marca_id INT NOT NULL,
+    FOREIGN KEY (marca_id) REFERENCES marcas(codigo)
+);
+
+CREATE TABLE usuarios (
+    email VARCHAR(50) PRIMARY KEY,
+    senha VARCHAR(20) NOT NULL,
+    tipo CHAR(1) NOT NULL, -- 'A' Admin, 'U' Usuário
+    telefone VARCHAR(20),
+    nome VARCHAR(50) NOT NULL
+);
+
+-- Inserir usuário de teste
+INSERT INTO usuarios (email, senha, tipo, telefone, nome) 
+VALUES ('jorgebavaresco@ifsul.edu.br', '123456', 'A', '(54)99984-4348', 'Jorge Bavaresco');
