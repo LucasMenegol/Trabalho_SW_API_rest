@@ -25,6 +25,10 @@ Swagger (Documentação - opcional)
 1. Requisitos Prévios
 Node.js instalado (v18+)
 
+Usar o comando para instalar o swagger.
+
+npm install swagger-jsdoc swagger-ui-express
+
 PostgreSQL instalado e rodando.
 
 2. Configuração do Banco de Dados
