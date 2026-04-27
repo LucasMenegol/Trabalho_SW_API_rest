@@ -53,5 +53,6 @@ CREATE TABLE usuarios (
 );
 
 -- Inserir usuário de teste
+
 INSERT INTO usuarios (email, senha, tipo, telefone, nome) 
 VALUES ('jorgebavaresco@ifsul.edu.br', '123456', 'A', '(54)99984-4348', 'Jorge Bavaresco');
