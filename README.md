@@ -1,4 +1,4 @@
-E-Shop API - Gestão de Veículos (Marcas e Modelos)
+//E-Shop API - Gestão de Veículos (Marcas e Modelos)
 Esta é uma API REST desenvolvida para a disciplina de Programação Web. O sistema permite o gerenciamento de Marcas e seus respectivos Modelos de veículos, contando com um sistema de autenticação via JWT (JSON Web Token) para proteção das rotas.
 
 Descrição do Cenário
