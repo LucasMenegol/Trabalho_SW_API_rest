@@ -29,8 +29,6 @@ Usar o comando para instalar o swagger.
 
 npm install swagger-jsdoc swagger-ui-express
 
-PostgreSQL instalado e rodando.
-
 2. Configuração do Banco de Dados
 No seu terminal PostgreSQL ou pgAdmin, execute os seguintes comandos para criar a estrutura:
 
